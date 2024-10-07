@@ -36,37 +36,34 @@ This is a simple REST API built with PHP and MySQL. It allows you to perform CRU
     );
 
 ## Usage
+
 ### Endpoints
 
-GET /api.php - Retrieve all users
-GET /api.php?id=1 - Retrieve a user by ID
-POST /api.php - Add a new user
-PUT /api.php?id=1 - Update a user by ID
-DELETE /api.php?id=1 - Delete a user by ID
+- **GET** `/api.php` - Retrieve all users  
+- **GET** `/api.php?id=1` - Retrieve a user by ID  
+- **POST** `/api.php` - Add a new user  
+- **PUT** `/api.php?id=1` - Update a user by ID  
+- **DELETE** `/api.php?id=1` - Delete a user by ID  
+
 
 ## Example Requests
-Retrieve all users:
 
-bash
-Copy code
-curl -X GET http://localhost/simple_rest_api/api.php
-Retrieve a user by ID:
+- **Retrieve all users:**
+   ```bash
+   curl -X GET http://localhost/simple_rest_api/api.php
 
-bash
-Copy code
-curl -X GET http://localhost/simple_rest_api/api.php?id=1
-Add a new user:
+- **Retrieve a user by ID:**
+   ```bash
+   curl -X GET http://localhost/simple_rest_api/api.php?id=1
 
-bash
-Copy code
-curl -X POST http://localhost/simple_rest_api/api.php -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com", "age": 30}'
-Update a user:
+- **Add a new user:**
+   ```bash
+   curl -X POST http://localhost/simple_rest_api/api.php -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john@example.com", "age": 30}'
 
-bash
-Copy code
-curl -X PUT http://localhost/simple_rest_api/api.php?id=1 -H "Content-Type: application/json" -d '{"name": "Jane Doe", "email": "jane@example.com", "age": 28}'
-Delete a user:
+- **Update a user:**
+   ```bash
+   curl -X PUT http://localhost/simple_rest_api/api.php?id=1 -H "Content-Type: application/json" -d '{"name": "Jane Doe", "email": "jane@example.com", "age": 28}'
 
-bash
-Copy code
-curl -X DELETE http://localhost/simple_rest_api/api.php?id=1
+- **Delete a user:**
+   ```bash
+   curl -X DELETE http://localhost/simple_rest_api/api.php?id=1

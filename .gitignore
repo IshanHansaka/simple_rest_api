@@ -1,0 +1,9 @@
+# Ignore .env file
+.env
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore other files
+*.log
+*.tmp

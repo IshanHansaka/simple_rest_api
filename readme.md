@@ -46,7 +46,7 @@ This is a simple REST API built with PHP and MySQL. It allows you to perform CRU
 - **DELETE** `/api.php?id=1` - Delete a user by ID  
 
 
-## Example Requests
+### Example Requests
 
 - **Retrieve all users:**
    ```bash
